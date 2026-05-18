@@ -20,10 +20,9 @@ export function About() {
       ref={ref}
       className="py-32 relative overflow-hidden bg-gradient-to-br from-[#0b0806] via-[#120d0a] to-[#1a140f]"
     >
-      {/* Premium Ambient Lights */}
+      {/* Ambient Lights */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#d4a574]/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#8b5e34]/10 blur-3xl rounded-full" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_60%)]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-24 items-center">
@@ -38,69 +37,53 @@ export function About() {
             {/* Glow */}
             <div className="absolute -top-10 -left-10 w-72 h-72 bg-[var(--coffee-cream)]/20 blur-3xl rounded-full" />
 
-            {/* IMAGE CARD */}
+            {/* IMAGE WRAPPER */}
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.5 }}
               className="relative overflow-hidden rounded-[48px] border border-white/10 bg-black/40 shadow-[0_40px_120px_rgba(0,0,0,0.8)] group"
             >
-              {/* TOP PREMIUM LABEL */}
+              {/* Premium Label */}
               <div className="absolute top-6 left-6 z-20">
-                <div className="bg-[rgba(15,10,8,0.75)] backdrop-blur-2xl border border-white/10 rounded-full px-5 py-3 shadow-2xl">
-                  <p className="text-[10px] uppercase tracking-[0.35em] text-[var(--coffee-cream)]/80 mb-1">
+                <div className="bg-[rgba(15,10,8,0.75)] backdrop-blur-2xl border border-white/10 rounded-full px-5 py-3">
+                  <p className="text-[10px] uppercase tracking-[0.35em] text-[var(--coffee-cream)]/80">
                     Pulse Specialty Coffee
                   </p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[var(--coffee-cream)] animate-pulse" />
-                    <span className="text-[13px] text-[var(--warm-beige)]/80">
-                      Premium Café Experience
-                    </span>
-                  </div>
                 </div>
               </div>
 
-              {/* IMAGE (FIXED - NO EMPTY SPACE) */}
-              <img
-                src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
-                alt="Pulse Cafe Interior"
-                className="w-full h-[780px] object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-700"
-              />
+              {/* IMAGE FIX (NO CROPPING + NO EMPTY SPACE ISSUE) */}
+              <div className="relative w-full h-[780px] overflow-hidden flex items-center justify-center">
+                
+                <img
+                  src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
+                  alt="Pulse Cafe Interior"
+                  className="max-w-full max-h-full object-contain scale-105 group-hover:scale-110 transition-transform duration-700"
+                />
 
-              {/* Cinematic Overlays */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,165,116,0.35),transparent_40%)]" />
+                {/* Cinematic background fill */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#120d0a] via-[#1b140f] to-[#0f0b08]" />
 
-              {/* TOP FADE (extra premium fix for smooth blending) */}
-              <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#120d0a] to-transparent" />
+                {/* Premium glow */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,165,116,0.18),transparent_60%)]" />
+              </div>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             </motion.div>
 
             {/* Floating Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.5 }}
-              className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[85%]"
-            >
-              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(15,10,8,0.72)] backdrop-blur-2xl px-8 py-7 shadow-[0_10px_50px_rgba(0,0,0,0.45)]">
-                <div className="w-14 h-[2px] bg-[var(--coffee-cream)] mb-5 rounded-full" />
-
-                <p className="text-[11px] uppercase tracking-[0.35em] text-[var(--coffee-cream)]/80 mb-3">
-                  Specialty Experience
-                </p>
-
-                <h3 className="text-[28px] leading-tight text-[var(--warm-beige)] mb-4 font-light">
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[85%]">
+              <div className="bg-[rgba(15,10,8,0.72)] backdrop-blur-2xl border border-white/10 rounded-[28px] px-8 py-7">
+                <h3 className="text-[28px] text-[var(--warm-beige)]">
                   Crafted Coffee.
                   <span className="block text-[var(--coffee-cream)]">
                     Designed Atmosphere.
                   </span>
                 </h3>
-
-                <p className="text-[15px] leading-relaxed text-[var(--warm-beige)]/60">
-                  Premium coffee moments surrounded by warm interiors,
-                  elegant lighting, and a modern luxury café experience.
-                </p>
               </div>
-            </motion.div>
+            </div>
+
           </motion.div>
 
           {/* TEXT SIDE (UNCHANGED) */}
@@ -108,39 +91,23 @@ export function About() {
             initial={{ opacity: 0, x: 60 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1 }}
-            className="relative z-10"
           >
-            <span className="text-[var(--coffee-cream)] tracking-[0.35em] text-sm mb-6 block">
-              ABOUT PULSE
-            </span>
-
-            <h2 className="text-5xl md:text-6xl lg:text-7xl text-[var(--warm-beige)] mb-8 leading-[0.95]">
-              More Than
-              <span className="block text-[var(--coffee-cream)]">
-                Just Coffee
-              </span>
+            <h2 className="text-6xl text-[var(--warm-beige)] mb-8">
+              More Than <span className="text-[var(--coffee-cream)]">Coffee</span>
             </h2>
 
-            <p className="text-xl text-[var(--warm-beige)]/70 leading-relaxed mb-8">
-              Pulse Speciality Coffee blends exceptional coffee craftsmanship
-              with a modern luxury atmosphere designed for meaningful moments.
+            <p className="text-lg text-[var(--warm-beige)]/70 mb-6">
+              Premium coffee experience with luxury atmosphere.
             </p>
 
-            <p className="text-lg text-[var(--warm-beige)]/60 leading-relaxed mb-14">
-              From signature espresso creations to warm late-night vibes,
-              every corner of Pulse is designed to feel premium, relaxing,
-              and unforgettable.
-            </p>
-
-            {/* STATS */}
             <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
+              {stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-[rgba(255,255,255,0.03)] backdrop-blur-xl border border-white/10 rounded-3xl p-6"
+                  className="p-6 rounded-3xl border border-white/10 bg-white/5"
                 >
-                  <stat.icon className="w-8 h-8 text-[var(--coffee-cream)] mb-4" />
-                  <div className="text-3xl text-[var(--warm-beige)] mb-2">
+                  <stat.icon className="w-8 h-8 text-[var(--coffee-cream)] mb-3" />
+                  <div className="text-2xl text-[var(--warm-beige)]">
                     {stat.value}
                   </div>
                   <div className="text-sm text-[var(--warm-beige)]/60">
