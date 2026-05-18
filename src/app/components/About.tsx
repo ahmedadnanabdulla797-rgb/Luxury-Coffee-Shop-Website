@@ -79,7 +79,7 @@ export function About() {
               <img
                 src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
-                className="w-full h-[780px] object-contain scale-[0.88] group-hover:scale-95 transition-all duration-700 bg-gradient-to-br from-[#120d08] via-[#1b140f] to-[#0f0b08]"
+                className="w-full h-[850px] object-contain scale-[0.88] group-hover:scale-95 transition-all duration-700 bg-gradient-to-br from-[#120d08] via-[#1b140f] to-[#0f0b08]"
               />
 
               {/* Cinematic Overlay */}
