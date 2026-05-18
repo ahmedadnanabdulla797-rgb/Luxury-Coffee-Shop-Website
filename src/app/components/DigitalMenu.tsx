@@ -44,7 +44,7 @@ export function DigitalMenu() {
             <div className="bg-[var(--glass-bg)] backdrop-blur-xl border-2 border-[var(--glass-border)] rounded-3xl p-6 hover:border-[var(--coffee-cream)]/50 transition-all duration-500 shadow-2xl hover:shadow-[var(--coffee-cream)]/20">
               <div className="relative bg-white rounded-2xl p-4 mb-4">
                 <img
-                  src="/src/imports/WhatsApp_Image_2026-05-17_at_8.42.11_PM-1.jpeg"
+                  src="/imports/WhatsApp_Image_2026-05-17_at_8.42.11_PM-1.jpeg"
                   alt="Pulse Cafe Menu QR Code"
                   className="w-full h-auto rounded-xl"
                 />
