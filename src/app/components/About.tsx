@@ -35,7 +35,7 @@ export function About() {
               transition={{ duration: 0.4 }}
             >
               <img
-                src="/src/imports/unnamed__4_.jpg"
+                src="/imports/unnamed__4_.jpg"
                 alt="Pulse Cafe Interior"
                 className="w-full h-[500px] object-cover"
               />
