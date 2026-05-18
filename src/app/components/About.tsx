@@ -35,7 +35,7 @@ export function About() {
               transition={{ duration: 0.4 }}
             >
               <img
-                src="/imports/unnamed__4_.jpg"
+                src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
                 className="w-full h-[500px] object-cover"
               />
