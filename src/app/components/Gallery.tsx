@@ -26,35 +26,35 @@ export function Gallery() {
 
   const galleryImages = [
     {
-      url: "/src/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png",
+      url: "/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png",
       alt: "Pulse Cafe Exterior at Night",
     },
     {
-      url: "/src/imports/unnamed__2_.jpg",
+      url: "/imports/unnamed__2_.jpg",
       alt: "Perfect latte art",
     },
     {
-      url: "/src/imports/unnamed__4_.jpg",
+      url: "/imports/unnamed__4_.jpg",
       alt: "Modern cafe interior",
     },
     {
-      url: "/src/imports/unnamed.jpg",
+      url: "/imports/unnamed.jpg",
       alt: "Spanish Latte with pastry",
     },
     {
-      url: "/src/imports/unnamed__5_.jpg",
+      url: "/imports/unnamed__5_.jpg",
       alt: "Pulse cafe signage",
     },
     {
-      url: "/src/imports/unnamed__3_.jpg",
+      url: "/imports/unnamed__3_.jpg",
       alt: "Signature desserts",
     },
     {
-      url: "/src/imports/unnamed__1_.jpg",
+      url: "/imports/unnamed__1_.jpg",
       alt: "Coffee and cake pairing",
     },
     {
-      url: "/src/imports/unnamed__4_.jpg",
+      url: "/imports/unnamed__4_.jpg",
       alt: "Luxury coffee bar",
     },
   ];
