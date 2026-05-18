@@ -1,12 +1,13 @@
-const img1 = "/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png";
-const img2 = "/imports/unnamed__2_.jpg";
-const img3 = "/imports/unnamed__4_.jpg";
-const img4 = "/imports/unnamed.jpg";
-const img5 = "/imports/unnamed__5_.jpg";
-const img6 = "/imports/unnamed__3_.jpg";
-const img7 = "/imports/unnamed__1_.jpg";
-const img8 = "/imports/unnamed__4_.jpg";
-
+const galleryImages = [
+  { url: "/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png", alt: "Pulse Cafe Exterior at Night" },
+  { url: "/imports/unnamed__2_.jpg", alt: "Perfect latte art" },
+  { url: "/imports/unnamed__4_.jpg", alt: "Modern cafe interior" },
+  { url: "/imports/unnamed.jpg", alt: "Spanish Latte with pastry" },
+  { url: "/imports/unnamed__5_.jpg", alt: "Pulse cafe signage" },
+  { url: "/imports/unnamed__3_.jpg", alt: "Signature desserts" },
+  { url: "/imports/unnamed__1_.jpg", alt: "Coffee and cake pairing" },
+  { url: "/imports/unnamed__4_.jpg", alt: "Luxury coffee bar" },
+];
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef, useState } from "react";
