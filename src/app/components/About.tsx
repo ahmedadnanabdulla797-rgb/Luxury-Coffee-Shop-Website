@@ -61,7 +61,7 @@ export function About() {
               <img
                 src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
-                className="w-full h-[720px] object-contain scale-[0.88] group-hover:scale-95 transition-all duration-700 bg-gradient-to-br from-[#120d08] via-[#1b140f] to-[#0f0b08]"
+                className="w-full h-[780px] object-contain scale-[0.88] group-hover:scale-95 transition-all duration-700 bg-gradient-to-br from-[#120d08] via-[#1b140f] to-[#0f0b08]"
               />
 
               {/* Cinematic Overlay */}
@@ -71,26 +71,37 @@ export function About() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,165,116,0.35),transparent_40%)]" />
             </motion.div>
 
-            {/* Floating Glass Card */}
+            {/* Premium Floating Experience Card */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5 }}
-              className="absolute -bottom-10 -right-10 bg-[rgba(20,15,10,0.75)] backdrop-blur-2xl border border-white/10 rounded-3xl p-8 max-w-sm shadow-2xl"
+              className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[85%]"
             >
-              <p className="text-[var(--coffee-cream)] tracking-[0.25em] text-xs mb-3">
-                SPECIALTY EXPERIENCE
-              </p>
+              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(15,10,8,0.72)] backdrop-blur-2xl px-8 py-7 shadow-[0_10px_50px_rgba(0,0,0,0.45)]">
 
-              <h3 className="text-2xl text-[var(--warm-beige)] mb-3 leading-snug">
-                Crafted Coffee,
-                Designed Atmosphere
-              </h3>
+                {/* Soft top glow */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,165,116,0.15),transparent_60%)]" />
 
-              <p className="text-[var(--warm-beige)]/60 text-sm leading-relaxed">
-                Premium coffee moments with warm interiors, luxury ambiance,
-                and handcrafted perfection in every detail.
-              </p>
+                {/* Small premium line */}
+                <div className="w-14 h-[2px] bg-[var(--coffee-cream)] mb-5 rounded-full" />
+
+                <p className="text-[11px] uppercase tracking-[0.35em] text-[var(--coffee-cream)]/80 mb-3">
+                  Specialty Experience
+                </p>
+
+                <h3 className="text-[28px] leading-tight text-[var(--warm-beige)] mb-4 font-light">
+                  Crafted Coffee.
+                  <span className="block text-[var(--coffee-cream)]">
+                    Designed Atmosphere.
+                  </span>
+                </h3>
+
+                <p className="text-[15px] leading-relaxed text-[var(--warm-beige)]/60 max-w-md">
+                  Premium coffee moments surrounded by warm interiors,
+                  elegant lighting, and a modern luxury café experience.
+                </p>
+              </div>
             </motion.div>
           </motion.div>
 
