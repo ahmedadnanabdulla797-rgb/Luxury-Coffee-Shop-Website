@@ -57,7 +57,25 @@ export function About() {
               transition={{ duration: 0.5 }}
               className="relative overflow-hidden rounded-[40px] border border-white/10 backdrop-blur-xl bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.7)] group"
             >
-              {/* Image */}
+
+              {/* TOP PREMIUM LABEL */}
+              <div className="absolute top-6 left-6 z-20">
+                <div className="bg-[rgba(15,10,8,0.75)] backdrop-blur-2xl border border-white/10 rounded-full px-5 py-3 shadow-2xl">
+                  <p className="text-[10px] uppercase tracking-[0.35em] text-[var(--coffee-cream)]/80 mb-1">
+                    Pulse Specialty Coffee
+                  </p>
+
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-[var(--coffee-cream)] animate-pulse" />
+
+                    <span className="text-[13px] text-[var(--warm-beige)]/80">
+                      Premium Café Experience
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* IMAGE */}
               <img
                 src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
