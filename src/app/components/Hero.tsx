@@ -12,7 +12,7 @@ export function Hero() {
         <img
           src="/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png"
           alt="Pulse Specialty Coffee - Sharjah"
-          className="w-[110%] h-full object-cover object-[30%_50%]"
+          className="w-[110%] h-full object-cover object-[20%_10%]"
         />
       </div>
 
