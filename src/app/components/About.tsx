@@ -37,7 +37,7 @@ export function About() {
               <img
                 src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--coffee-dark)] via-transparent to-transparent" />
             </motion.div>
