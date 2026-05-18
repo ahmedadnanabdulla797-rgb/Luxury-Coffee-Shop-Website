@@ -19,23 +19,6 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const handleSmoothScroll = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.tagName === "A" && target.getAttribute("href")?.startsWith("#")) {
-        e.preventDefault();
-        const id = target.getAttribute("href")?.substring(1);
-        const element = document.getElementById(id || "");
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }
-    };
-
-    document.addEventListener("click", handleSmoothScroll);
-    return () => document.removeEventListener("click", handleSmoothScroll);
-  }, []);
-
   return (
     <div className="min-h-screen bg-[var(--coffee-dark)] overflow-x-hidden">
       {loading && <LoadingScreen />}
@@ -43,12 +26,31 @@ export default function App() {
       <Navbar />
 
       <main className="relative">
-        <Hero />
-        <About />
-        <DigitalMenu />
-        <Gallery />
-        <Reviews />
-        <Contact />
+
+        <section id="home">
+          <Hero />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="menu">
+          <DigitalMenu />
+        </section>
+
+        <section id="gallery">
+          <Gallery />
+        </section>
+
+        <section id="reviews">
+          <Reviews />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+
       </main>
 
       <Footer />
