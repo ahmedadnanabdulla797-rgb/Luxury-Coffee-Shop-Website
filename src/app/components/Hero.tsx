@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--coffee-dark)]/40 via-[var(--coffee-dark)]/50 to-[var(--coffee-dark)]/90 z-10" />
         <img
-          src="/src/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png"
+          src="/imports/ChatGPT_Image_May_15__2026__03_58_45_PM.png"
           alt="Pulse Specialty Coffee - Sharjah"
           className="w-full h-full object-cover object-center"
         />
