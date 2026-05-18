@@ -18,8 +18,15 @@ export function About() {
     <section
       id="about"
       ref={ref}
-      className="py-32 bg-[var(--coffee-dark)] relative overflow-hidden"
+      className="py-32 relative overflow-hidden bg-gradient-to-br from-[#0b0806] via-[#120d0a] to-[#1a140f]"
     >
+      {/* Premium Ambient Lights */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#d4a574]/10 blur-3xl rounded-full" />
+
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#8b5e34]/10 blur-3xl rounded-full" />
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_60%)]" />
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -29,9 +36,6 @@ export function About() {
           }}
         />
       </div>
-
-      {/* Ambient Glow */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[var(--coffee-cream)]/10 blur-3xl rounded-full" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 
@@ -44,19 +48,20 @@ export function About() {
             transition={{ duration: 1 }}
             className="relative"
           >
-            {/* Background Glow */}
+            {/* Glow */}
             <div className="absolute -top-10 -left-10 w-72 h-72 bg-[var(--coffee-cream)]/20 blur-3xl rounded-full" />
 
-            {/* Main Image */}
+            {/* Main Image Container */}
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.5 }}
-              className="relative overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.7)]"
+              className="relative overflow-hidden rounded-[40px] border border-white/10 backdrop-blur-xl bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.7)] group"
             >
+              {/* Image */}
               <img
                 src="/imports/ChatGPT Image May 18, 2026, 05_06_37 PM.png"
                 alt="Pulse Cafe Interior"
-                className="w-full h-[720px] object-cover"
+                className="w-full h-[720px] object-contain scale-[0.88] group-hover:scale-95 transition-all duration-700 bg-gradient-to-br from-[#120d08] via-[#1b140f] to-[#0f0b08]"
               />
 
               {/* Cinematic Overlay */}
